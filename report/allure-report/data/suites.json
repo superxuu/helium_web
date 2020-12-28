@@ -1,0 +1,30 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "test_cases",
+    "children" : [ {
+      "name" : "test_login",
+      "children" : [ {
+        "name" : "TestLogin",
+        "children" : [ {
+          "name" : "test_login[data0]",
+          "uid" : "c040d32745a659b1",
+          "parentUid" : "f364149869161a95da77518cd2f5894f",
+          "status" : "failed",
+          "time" : {
+            "start" : 1608891090506,
+            "stop" : 1608891095372,
+            "duration" : 4866
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{'name': '所有参数正确，登陆成功', 'params': {'name': 'test1', 'pwd': '123zxc', 'capture': None}, 'case_status': True, 'expected_result': 'Button(\"预约会议\").exists()'}" ]
+        } ],
+        "uid" : "f364149869161a95da77518cd2f5894f"
+      } ],
+      "uid" : "9ad89efd6ef119ff9521e93685587771"
+    } ],
+    "uid" : "10075452c99ff4a1bfbce955ca922247"
+  } ]
+}

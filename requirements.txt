@@ -1,0 +1,12 @@
+faker
+pytest
+pony
+allure-pytest
+selenium
+helium
+pytest-ordering
+pytest-rerunfailures
+requests
+redis
+pymysql
+click

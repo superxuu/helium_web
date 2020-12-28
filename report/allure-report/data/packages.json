@@ -1,0 +1,22 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "test_cases.test_login",
+    "children" : [ {
+      "name" : "test_login[data0]",
+      "uid" : "c040d32745a659b1",
+      "parentUid" : "a7edde4494a9bc1bf11498895350f7e9",
+      "status" : "failed",
+      "time" : {
+        "start" : 1608891090506,
+        "stop" : 1608891095372,
+        "duration" : 4866
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'name': '所有参数正确，登陆成功', 'params': {'name': 'test1', 'pwd': '123zxc', 'capture': None}, 'case_status': True, 'expected_result': 'Button(\"预约会议\").exists()'}" ]
+    } ],
+    "uid" : "test_cases.test_login"
+  } ]
+}

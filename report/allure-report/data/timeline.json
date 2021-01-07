@@ -4,35 +4,61 @@
   "children" : [ {
     "name" : "ZTXUCHAO1",
     "children" : [ {
-      "name" : "5412-MainThread",
+      "name" : "5884-MainThread",
       "children" : [ {
         "name" : "test_login[data0]",
-        "uid" : "7257b5ca0168f382",
-        "parentUid" : "fdcccf95c11dbb67e7e929c29986c14a",
+        "uid" : "70ed2b95b412b9d7",
+        "parentUid" : "9b6dddbd2987971dfc842b78346d2ded",
         "status" : "failed",
         "time" : {
-          "start" : 1608891079050,
-          "stop" : 1608891083960,
-          "duration" : 4910
+          "start" : 1610007937753,
+          "stop" : 1610007942448,
+          "duration" : 4695
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "{'name': '所有参数正确，登陆成功', 'params': {'name': 'test1', 'pwd': '123zxc', 'capture': None}, 'case_status': True, 'expected_result': 'Button(\"预约会议\").exists()'}" ]
       }, {
         "name" : "test_login[data0]",
-        "uid" : "c040d32745a659b1",
-        "parentUid" : "fdcccf95c11dbb67e7e929c29986c14a",
+        "uid" : "6d803c3df47e20d8",
+        "parentUid" : "9b6dddbd2987971dfc842b78346d2ded",
         "status" : "failed",
         "time" : {
-          "start" : 1608891090506,
-          "stop" : 1608891095372,
-          "duration" : 4866
+          "start" : 1610007948925,
+          "stop" : 1610007953604,
+          "duration" : 4679
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': '所有参数正确，登陆成功', 'params': {'name': 'test1', 'pwd': '123zxc', 'capture': None}, 'case_status': True, 'expected_result': 'Button(\"预约会议\").exists()'}" ]
+      }, {
+        "name" : "test_login[data0]",
+        "uid" : "10dfca5e0ee8a4d7",
+        "parentUid" : "9b6dddbd2987971dfc842b78346d2ded",
+        "status" : "failed",
+        "time" : {
+          "start" : 1610007915978,
+          "stop" : 1610007920671,
+          "duration" : 4693
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': '所有参数正确，登陆成功', 'params': {'name': 'test1', 'pwd': '123zxc', 'capture': None}, 'case_status': True, 'expected_result': 'Button(\"预约会议\").exists()'}" ]
+      }, {
+        "name" : "test_login[data0]",
+        "uid" : "eb8ff90b736c955a",
+        "parentUid" : "9b6dddbd2987971dfc842b78346d2ded",
+        "status" : "failed",
+        "time" : {
+          "start" : 1610007927091,
+          "stop" : 1610007931705,
+          "duration" : 4614
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "{'name': '所有参数正确，登陆成功', 'params': {'name': 'test1', 'pwd': '123zxc', 'capture': None}, 'case_status': True, 'expected_result': 'Button(\"预约会议\").exists()'}" ]
       } ],
-      "uid" : "fdcccf95c11dbb67e7e929c29986c14a"
+      "uid" : "9b6dddbd2987971dfc842b78346d2ded"
     } ],
     "uid" : "73b6be8e59583e9ca6d0b2fdf5c7f103"
   } ]

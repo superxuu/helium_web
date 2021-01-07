@@ -17,7 +17,7 @@ caps = {
             'enableNetwork': True,
         },
         'w3c': False,
-        'args': ["--incognito", '--headless', '--disable-gpu', '--lang=zh-CN', '--window-size=1680,1050'], #无头模式
+        'args': ["--incognito", '--headless', '--disable-gpu', '--lang=zh-CN', '--window-size=1680,1050'],  # 无头模式
         # 'args': ["--incognito", '--disable-gpu','--lang=zh-CN', '--window-size=1680,1050'],     #有头模式
     },
 }
@@ -67,13 +67,3 @@ def open_close_browser_with_org_data():
     time.sleep(1)
     yield driver
     kill_browser()
-
-# def pytest_generate_tests(metafunc):
-#     pass
-#     data_py = metafunc.module.__name__.split('.')[1]
-#     data_func = metafunc.function.__name__
-#     print(data_py)
-#     print(data_func)
-#     __import__(f'data.{data_py}.{data_func}_data')
-#     func = getattr(data, f'{data_func}_data')
-#     metafunc.parametrize('params',func.data_func())

@@ -7,13 +7,13 @@
       "name" : "登录页面验证",
       "children" : [ {
         "name" : "test_login[data0]",
-        "uid" : "c040d32745a659b1",
+        "uid" : "6d803c3df47e20d8",
         "parentUid" : "79e3df24ebf4b564c250abc344c1135a",
         "status" : "failed",
         "time" : {
-          "start" : 1608891090506,
-          "stop" : 1608891095372,
-          "duration" : 4866
+          "start" : 1610007948925,
+          "stop" : 1610007953604,
+          "duration" : 4679
         },
         "flaky" : false,
         "newFailed" : false,

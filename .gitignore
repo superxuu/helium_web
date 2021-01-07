@@ -4,6 +4,9 @@ __pycache__/
 *$py.class
 # C extensions
 *.so
+report/allure-report/*
+report/allure-results/*
+report/screen_shoot/*
 .idea/
 __pycache__/
 # Distribution / packaging

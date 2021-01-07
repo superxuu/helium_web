@@ -7,14 +7,13 @@ import platform
 
 current_dir = os.getcwd()  # 生成报告和错误截图时使用
 main_dir = os.path.dirname(os.path.abspath(__file__))
-print(current_dir)
-print(main_dir)
+print('当前路径：', current_dir)
+print('案例查找路径：', main_dir)
 
 @click.command()
 @click.option("-m", default='admin', help="pytest mark")
 def main(m):
-    args = [main_dir,'-m', f'{m}', f'--alluredir={current_dir}/report/allure-results', '--clean-alluredir']
-    # args = ['-m', f'{m}']
+    args = [main_dir,'-m', m, f'--alluredir={current_dir}/report/allure-results', '--clean-alluredir']
     pytest.main(args)
     if (platform.system() == 'Windows'):
         subprocess.Popen(['allure', 'generate', f'{current_dir}/report/allure-results', '--clean', '-o',

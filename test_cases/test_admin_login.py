@@ -5,23 +5,23 @@ from helium import *
 
 from common.assert_with_screenshoot import screenshoot
 from common.redis_code import get_captcha_code, get_response
-from common.config import org_host
-from data.org_login_data import org_login_data
+from common.config import admin_host
+from data.admin_login_data import login_data
 
 
-@pytest.mark.org
+@pytest.mark.admin
 @pytest.mark.run(order=1)
-@allure.feature('机构登录')
+@allure.feature('登录')
 class TestLogin(object):
 
     @screenshoot
     @allure.story('登录页面验证')
-    @pytest.mark.parametrize('data', org_login_data)
-    def test_org_login(self, data, open_close_browser):
+    @pytest.mark.parametrize('data', login_data)
+    def test_login(self, data, open_close_browser):
         allure.dynamic.description(data['name'])
         driver = open_close_browser
-        driver.get(org_host)
-        captcha_url = f"{org_host}/ztone/captcha/send"
+        driver.get(admin_host)
+        captcha_url = f"{admin_host}/ztone/captcha/send"
         write(data['params']['name'], into='请输入账号')
         write(data['params']['pwd'], into='请输入密码')
         if data['params']['capture'] == None:

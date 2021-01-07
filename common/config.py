@@ -1,16 +1,16 @@
-admin_host = 'http://xx.xx.x.x:8080'
+admin_host = 'http://11.8.40.108:8083'
 admin_user = 'test'
 admin_pwd = '123zxc'
 
-org_host = 'http://xx.xx.x.x:8081'
+org_host = 'http://11.8.40.108:8085'
 org_user = 'test'
 org_pwd = '123zxc'
 
 
 # 数据库配置：
 db_provider = 'mysql'
-db_host = 'xx.xx.x.x'
-port = 3306
-user = 'mytest'
-passwd = '123@mysql'
-db_name = 'test'
+db_host = '11.17.2.35'
+port = 4936
+user = 'ztone'
+passwd = 'Ect888@mysql'
+db_name = 'ztone'

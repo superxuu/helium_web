@@ -1,2 +1,2 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"failed","Fri Dec 25 18:11:30 CST 2020","Fri Dec 25 18:11:35 CST 2020","4866","test_cases","test_login","TestLogin","","","test_login[data0]","所有参数正确，登陆成功"
+"failed","Thu Jan 07 16:25:48 CST 2021","Thu Jan 07 16:25:53 CST 2021","4679","test_cases","test_admin_login","TestLogin","","","test_login[data0]","所有参数正确，登陆成功"

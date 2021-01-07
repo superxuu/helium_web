@@ -10,7 +10,7 @@ org_pwd = '123zxc'
 # 数据库配置：
 db_provider = 'mysql'
 db_host = '11.17.2.35'
-port = 4936
+port = 3306
 user = 'ztone'
-passwd = 'Ect888@mysql'
+passwd = '@mysql'
 db_name = 'ztone'

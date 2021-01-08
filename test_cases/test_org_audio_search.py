@@ -3,7 +3,7 @@ import allure
 import pytest
 from helium import *
 from common.mysql_connect import MysqlDB
-from common.assert_with_screenshoot import screenshoot
+from common.screen_shoot import screenshoot
 from data.org_audio_search_data import audio_search_data
 
 

@@ -4,7 +4,7 @@ import allure
 import pytest
 from helium import *
 
-from common.assert_with_screenshoot import screenshoot
+from common.screen_shoot import screenshoot
 from data.admin_price_template_data import price_template_data
 
 

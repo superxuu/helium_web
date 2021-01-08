@@ -4,7 +4,7 @@ import time
 import allure
 import pytest
 from helium import *
-from common.assert_with_screenshoot import screenshoot
+from common.screen_shoot import screenshoot
 from data.admin_edit_meeting_data import admin_edit_meeting_data
 
 

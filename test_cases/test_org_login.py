@@ -3,7 +3,7 @@ import allure
 import pytest
 from helium import *
 
-from common.assert_with_screenshoot import screenshoot
+from common.screen_shoot import screenshoot
 from common.redis_code import get_captcha_code, get_response
 from common.config import org_host
 from data.org_login_data import org_login_data

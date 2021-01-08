@@ -4,7 +4,7 @@ import pytest
 import random
 from helium import *
 from common.generate_phone import generate_phone
-from common.assert_with_screenshoot import screenshoot
+from common.screen_shoot import screenshoot
 from data.admin_add_org_data import add_org_data
 
 

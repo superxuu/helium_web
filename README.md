@@ -1,3 +1,9 @@
+V1.0.0：
+
+框架介绍：https://mp.weixin.qq.com/s/iB-tqSmb1lLYSJ_dBBS2Og
+
+V1.0.1：
+
 最新版优化失败截图逻辑，使用装饰器，使运行过程中的任何异常都可以触发截图，不仅限于断言失败，同时也简化了断言的写法：
 helium_web\common\screen_shoot.py
 
@@ -11,7 +17,12 @@ def test_edit_template(self, open_close_browser_with_admin_data, data={'name': '
     pass
 ```
 
+V1.0.2:
+
 2021-01-12：
+
 1.增加命令行参数 -B，控制浏览器选项
+
 2.增加兼容Firefox浏览器
+
 3.优化conftest.py

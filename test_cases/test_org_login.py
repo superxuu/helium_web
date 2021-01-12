@@ -4,7 +4,7 @@ import pytest
 from helium import *
 
 from common.screen_shoot import screenshoot
-from common.redis_code import get_captcha_code, get_response
+from common.redis_code import get_captcha_code, get_captcha_token
 from common.config import org_host
 from data.org_login_data import org_login_data
 
@@ -25,7 +25,7 @@ class TestLogin(object):
         write(data['params']['name'], into='请输入账号')
         write(data['params']['pwd'], into='请输入密码')
         if data['params']['capture'] == None:
-            captcha_code = get_captcha_code(get_response(driver, captcha_url)['captchaToken'])
+            captcha_code = get_captcha_code(get_captcha_token(driver, captcha_url)['captchaToken'])
         else:
             captcha_code = data['params']['capture']
         write(captcha_code, into='请输入验证码')

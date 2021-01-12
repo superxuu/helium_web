@@ -10,3 +10,8 @@ helium_web\common\screen_shoot.py
 def test_edit_template(self, open_close_browser_with_admin_data, data={'name': '禁用与启用套餐模板'}):
     pass
 ```
+
+2021-01-12：
+1.增加命令行参数 -B，控制浏览器选项
+2.增加兼容Firefox浏览器
+3.优化conftest.py

@@ -12,8 +12,9 @@ print('案例查找路径：', main_dir)
 
 @click.command()
 @click.option("-m", default='admin', help="pytest mark")
-def main(m):
-    args = [main_dir,'-m', m, f'--alluredir={current_dir}/report/allure-results', '--clean-alluredir']
+@click.option("-B", default='Chrome', help="browser option: Firefox or Chrome")
+def main(m,b):
+    args = [main_dir,'-m', m,'-B',b, f'--alluredir={current_dir}/report/allure-results', '--clean-alluredir']
     pytest.main(args)
     if (platform.system() == 'Windows'):
         subprocess.Popen(['allure', 'generate', f'{current_dir}/report/allure-results', '--clean', '-o',

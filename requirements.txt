@@ -10,3 +10,7 @@ requests
 redis
 pymysql
 click
+selenium-wire
+
+
+

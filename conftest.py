@@ -13,7 +13,7 @@ def pytest_addoption(parser):
     )
 
 
-@pytest.fixture()
+@pytest.fixture(scope='session')
 def driver(request):
     browser = request.config.getoption('-B')
     args = ['-headless', "-incognito", '-disable-gpu', '-lang=zh-C']  # 无头

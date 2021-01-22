@@ -1,9 +1,12 @@
 import time
+import allure
 import pytest
 from helium import *
 from seleniumwire import webdriver
 from common.config import admin_host, org_host, admin_user, admin_pwd, org_user, org_pwd
 from common.redis_code import get_captcha_code, get_captcha_token
+
+driver = None
 
 
 def pytest_addoption(parser):
@@ -15,6 +18,7 @@ def pytest_addoption(parser):
 
 @pytest.fixture(scope='session')
 def driver(request):
+    global driver
     browser = request.config.getoption('-B')
     args = ['-headless', "-incognito", '-disable-gpu', '-lang=zh-C']  # 无头
     # args=["-incognito",'-disable-gpu','-lang=zh-CN']#有头if browser in['Chrome','c','C','chrome','CHROME']:print(’使用Chrome浏览器’)
@@ -69,3 +73,16 @@ def open_close_browser_with_org_data(driver):
     time.sleep(1)
     yield driver
     kill_browser()
+
+
+@pytest.hookimpl(tryfirst=True, hookwrapper=True)
+def pytest_runtest_makereport():
+    """获取每个用例状态的钩子函数"""
+    # 获取钩子方法的调用结果
+    outcome = yield
+    rep = outcome.get_result()
+    # 仅仅获取用例call 执行结果是失败的情况, 不包含 setup/teardown
+    if rep.when == "call" and rep.failed:
+        # 添加allure报告截图
+        with allure.step('添加失败截图...'):
+            allure.attach(driver.get_screenshot_as_png(), "失败截图", allure.attachment_type.PNG)
